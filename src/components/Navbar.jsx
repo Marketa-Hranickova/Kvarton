@@ -2,7 +2,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Domů', href: '#', current: true },
+  { name: 'Akce', href: '#', current: true },
   { name: 'O nás', href: '#', current: false },
   { name: 'Nahrávky', href: '#', current: false },
   { name: 'Kontakt', href: '#', current: false },
@@ -59,7 +59,7 @@ export default function Example() {
             >
               <span className="absolute -inset-1.5" />
               <span className="sr-only">View notifications</span>
-              <p className='mx-1 text-[13px]'>KONTAKT</p>
+              <p className='mx-1 text-[13px]'>stageplan</p>
             </button>
 
             
