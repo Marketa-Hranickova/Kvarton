@@ -2,10 +2,10 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Akce', href: '#', current: true },
-  { name: 'O nás', href: '#', current: false },
-  { name: 'Nahrávky', href: '#', current: false },
-  { name: 'Kontakt', href: '#', current: false },
+  { name: 'Úvod', href: '#home', current: true },
+  { name: 'Nahrávky', href: '#nahravky', current: false },
+  { name: 'O nás', href: '#kapela', current: false },
+  { name: 'Kontakt', href: '#kontakt', current: false },
 ]
 
 function classNames(...classes) {
@@ -62,7 +62,7 @@ export default function Example() {
               <p className='mx-1 text-[13px]'>stageplan</p>
             </button>
 
-            
+
           </div>
         </div>
       </div>
