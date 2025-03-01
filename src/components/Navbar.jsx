@@ -1,24 +1,23 @@
-import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
   { name: 'Úvod', href: '#home', current: true },
   { name: 'Nahrávky', href: '#nahravky', current: false },
   { name: 'O nás', href: '#kapela', current: false },
   { name: 'Kontakt', href: '#kontakt', current: false },
-]
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(' ');
 }
 
-export default function Example() {
+export default function Navbar({ className }) { // Renamed to Navbar and added className prop <-- CHANGED
   return (
-    <Disclosure as="nav" className="bg-black">
+    <Disclosure as="nav" className={classNames('bg-black relative z-20', className)}> {/* Added relative z-20 <-- CHANGED */}
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            {/* Mobile menu button*/}
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
@@ -27,7 +26,7 @@ export default function Example() {
             </DisclosureButton>
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div className=" shrink-0 items-center hidden">
+            <div className="shrink-0 items-center hidden">
               <img
                 alt="Your Company"
                 src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
@@ -53,7 +52,6 @@ export default function Example() {
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-
             <button
               type="button"
               onClick={() => window.open('stageplot-2.pdf', '_blank')}
@@ -61,10 +59,8 @@ export default function Example() {
             >
               <span className="absolute -inset-1.5" />
               <span className="sr-only">View notifications</span>
-              <p className='mx-1 text-[13px]'>stageplot</p>
+              <p className="mx-1 text-[13px]">stageplot</p>
             </button>
-
-
           </div>
         </div>
       </div>
@@ -88,5 +84,5 @@ export default function Example() {
         </div>
       </DisclosurePanel>
     </Disclosure>
-  )
+  );
 }
