@@ -162,7 +162,7 @@ const Home = () => {
       { opacity: 0, x: 300 },
       {
         opacity: 1, x: 0, duration: 1, scrollTrigger: {
-          trigger: "#obrazekdva",
+          trigger: "#obrazekjedna",
           start: "top center",
           end: "top 60%",
           scrub: 1
@@ -174,7 +174,31 @@ const Home = () => {
       { opacity: 0, x: -300 },
       {
         opacity: 1, x: 0, duration: 1, scrollTrigger: {
-          trigger: "#obrazekdva",
+          trigger: "#obrazekjedna",
+          start: "top center",
+          end: "top 60%",
+          scrub: 1
+        }
+      }
+    );
+    gsap.fromTo(
+      "#kdebudeme",
+      { opacity: 0 },
+      {
+        opacity: 1, duration: 1, scrollTrigger: {
+          trigger: "#obrazekjedna",
+          start: "top center",
+          end: "top 60%",
+          scrub: 1
+        }
+      }
+    );
+    gsap.fromTo(
+      "#nahravky",
+      { opacity: 0 },
+      {
+        opacity: 1, duration: 1, scrollTrigger: {
+          trigger: "#obrazekjedna",
           start: "top center",
           end: "top 60%",
           scrub: 1
@@ -203,26 +227,33 @@ const Home = () => {
         </div>
       </section>
       {/* AKCE A NAHRÁVKY */}
-      <div id="nahravky" className="px-[120px] h-screen bg-black snap-start flex flex-col justify-around items-center ">
+      <div id="nahravky" className="px-[120px] h-screen bg-black snap-start flex flex-col justify-around items-center">
         <div className="flex flex-col md:flex-row items-center w-full space-y-6 md:space-y-0 md:justify-between">
-          <h2 className="text-white font-[montserrat] text-4xl text-center md:text-left">
+          <h2 id='kdebudeme' className="text-white font-[montserrat] text-4xl text-center md:text-left">
             KDE NÁS USLYŠÍTE
           </h2>
-          <a id='obrazekjedna' href="https://www.facebook.com/kapelakvarton/events" target="_blank" rel="noopener noreferrer" className="group">
-            <div className="h-64 w-[50vw] bg-[url('koncert.jpg')] bg-cover bg-center rounded-lg shadow-lg transform transition-all duration-300 group-hover:mr-[0px] group-hover:opacity-50 mr-[-130px] saturate-0 opacity-80"></div>
+          <a id="obrazekjedna" href="https://www.facebook.com/kapelakvarton/events" target="_blank" rel="noopener noreferrer" className="group relative">
+            <div className="h-64 w-[50vw] bg-[url('koncert.jpg')] bg-cover bg-center rounded-lg shadow-lg transition-all duration-300 group-hover:opacity-50 saturate-0 opacity-80 border-2" style={{ borderColor: "#968B72" }}></div>
+            <p className="absolute inset-0 flex items-center justify-center text-white text-2xl   opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              Podívej se na nadcházející akce!
+            </p>
           </a>
         </div>
 
         <div className="flex flex-col-reverse md:flex-row items-center w-full space-y-6 md:space-y-0 md:justify-between">
-          <a id='obrazekdva' href="https://www.youtube.com/@kapelakvarton" target="_blank" rel="noopener noreferrer" className="group">
-            <div className="h-64 w-[50vw] bg-[url('kytara.jpg')] bg-cover bg-center rounded-lg shadow-lg transform transition-all duration-300 group-hover:ml-[0px] group-hover:opacity-50 ml-[-130px] saturate-0 opacity-80"></div>
+          <a id="obrazekdva" href="https://www.youtube.com/@kapelakvarton" target="_blank" rel="noopener noreferrer" className="group relative">
+            <div className="h-64 w-[50vw] bg-[url('kytara.jpg')] bg-cover bg-center rounded-lg shadow-lg transition-all duration-300 group-hover:opacity-50 saturate-0 opacity-80 border-2" style={{ borderColor: "#968B72" }} ></div>
+            <p className="absolute inset-0 flex items-center justify-center text-white text-2xl opacity-0 transition-transform duration-300 group-hover:opacity-100 group-hover:ml-0 ml-[-300px]">
+              Poslechni si nás na YouTube!
+            </p>
           </a>
-          <h3 className="text-white text-4xl text-center md:text-right font-[montserrat]">
+          <h3 id='nahravky' className="text-white text-4xl text-center md:text-right font-[montserrat]">
             A NEBO NÁS CHCETE <br />
             SLYŠET HNED?
           </h3>
         </div>
       </div>
+
 
 
 

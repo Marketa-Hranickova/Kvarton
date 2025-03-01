@@ -27,7 +27,7 @@ export default function Example() {
             </DisclosureButton>
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex shrink-0 items-center">
+            <div className=" shrink-0 items-center hidden">
               <img
                 alt="Your Company"
                 src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
@@ -53,13 +53,15 @@ export default function Example() {
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+
             <button
               type="button"
+              onClick={() => window.open('stageplot-2.pdf', '_blank')}
               className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
             >
               <span className="absolute -inset-1.5" />
               <span className="sr-only">View notifications</span>
-              <p className='mx-1 text-[13px]'>stageplan</p>
+              <p className='mx-1 text-[13px]'>stageplot</p>
             </button>
 
 
