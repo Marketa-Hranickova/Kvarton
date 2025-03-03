@@ -265,7 +265,7 @@ const Home = () => {
           <p id="memberTitle" className='text-white leading-loose md:leading-normal lg:leading-loose text-sm sm:text-base md:text-base mb-3 md:pr-[7vh]'>{selectedMember.title}</p>
           <Button
             onClick={() => setSelectedMember(clenove[0])}
-            className={selectedMember === clenove[0] ? "hidden" : "block"}
+            className={selectedMember === clenove[0] ? "hidden" : "hidden lg:block"}
             text="O KAPELE"
           />
         </div>
