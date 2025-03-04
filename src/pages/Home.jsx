@@ -220,7 +220,7 @@ const Home = () => {
     <main className="scroll-smooth overflow-y-scroll snap-y snap-mandatory bg-black min-h-screen">
       <section id="home" className="snap-start h-screen relative">
         <Navbar />
-        <div className="absolute inset-0 bg-[url('./introfoto.jpg')] bg-cover bg-center blur-md z-0"></div>
+        <div className="absolute inset-0 bg-[url('./introfoto.png')] bg-cover bg-center blur-md z-0"></div>
         <div className="h-[92vh] bg-[url('./introfoto.png')] bg-contain xl:bg-cover bg-center flex flex-col justify-center items-center relative z-10 bg-no-repeat">
           <h1 id="hlavni" className="text-center text-white text-5xl sm:text-7xl md:text-9xl pt-[15vh] font-[Montserrat] font-light">
             KVARTON
