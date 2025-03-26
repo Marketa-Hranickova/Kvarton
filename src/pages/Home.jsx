@@ -310,7 +310,7 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div id="fotokontakt" className="bg-[url('/skupina.jpg')] bg-cover xl:bg-[url('/skupinav.jpg')] 2xl:bg-[url('/skupina.jpg')] lg:bg-center xl:bg-right bg-right h-[60vh] sm:h-[50vh] xl:h-[80vh] w-full xl:w-[100vh] mt-6 md:mt-[5vh] mb-[5vh] mr-0 md:mr-[10vh] rounded-2xl saturate-0 border-2 hover:saturate-70 transition-transform duration-200" style={{ borderColor: "#968B72" }}></div>
+        <div id="fotokontakt" className="bg-[url('/skupina.jpg')] bg-cover lg:bg-[url('/skupinav.jpg')] xl:bg-[url('/skupina.jpg')] lg:bg-center xl:bg-right bg-right h-[60vh] sm:h-[50vh] xl:h-[80vh] w-full xl:w-[100vh] mt-6 md:mt-[5vh] mb-[5vh] mr-0 md:mr-[10vh] rounded-2xl saturate-0 border-2 hover:saturate-70 transition-transform duration-200" style={{ borderColor: "#968B72" }}></div>
       </div>
     </main>
   )
