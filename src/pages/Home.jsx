@@ -221,7 +221,7 @@ const Home = () => {
       <section id="home" className="snap-start h-screen relative">
         <Navbar />
         <div className="absolute inset-0 bg-[url('/introfoto.png')] bg-cover bg-center blur-md z-0"></div>
-        <div className="h-[92vh] md:bg-[url('/introfoto3.png')] xl:bg-[url('/introfoto.jpg')]  bg-[url('/introfoto2.png')] bg-contain xl:bg-cover bg-center flex flex-col justify-center items-center relative z-10 bg-no-repeat">
+        <div className="h-[92vh] md:bg-[url('/introfoto3-min.png')] xl:bg-[url('/introfoto.jpg')]  bg-[url('/introfoto2-min.png')] bg-contain xl:bg-cover bg-center flex flex-col justify-center items-center relative z-10 bg-no-repeat">
           {/*  
           <h1 id="hlavni" className="text-center text-white text-5xl sm:text-7xl md:text-9xl pt-[15vh] font-[Montserrat] font-light">
             KVARTON
