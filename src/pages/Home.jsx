@@ -221,7 +221,7 @@ const Home = () => {
       <section id="home" className="snap-start h-screen relative">
         <Navbar />
         <div className="absolute inset-0 bg-[url('/introfoto.png')] bg-cover bg-center blur-md z-0"></div>
-        <div className="h-[92vh] bg-[url('/introfoto.jpg')] bg-contain xl:bg-cover bg-center flex flex-col justify-center items-center relative z-10 bg-no-repeat">
+        <div className="h-[92vh] md:bg-[url('/introfoto3.png')] xl:bg-[url('/introfoto.jpg')]  bg-[url('/introfoto2.png')] bg-contain xl:bg-cover bg-center flex flex-col justify-center items-center relative z-10 bg-no-repeat">
           {/*  
           <h1 id="hlavni" className="text-center text-white text-5xl sm:text-7xl md:text-9xl pt-[15vh] font-[Montserrat] font-light">
             KVARTON
@@ -233,26 +233,26 @@ const Home = () => {
       </section>
       {/* AKCE A NAHRÁVKY */}
       <div id="nahravky" className="px-4 sm:px-8 md:px-[120px] h-screen bg-black snap-start flex flex-col justify-around items-center">
-        <div className="flex flex-col md:flex-row items-center w-full space-y-6 md:space-y-0 md:justify-between">
-          <h2 id='kdebudeme' className="text-white font-[Montserrat] text-2xl sm:text-3xl md:text-4xl text-center md:text-left">
+        <div className="flex flex-col xl:flex-row items-center w-full space-y-6 xl:space-y-0 xl:justify-between">
+          <h2 id='kdebudeme' className="text-white font-[Montserrat] text-2xl sm:text-3xl xl:text-4xl text-center xl:text-left">
             KDE NÁS USLYŠÍTE
           </h2>
-          <a id="obrazekjedna" href="https://www.facebook.com/kapelakvarton/events" target="_blank" rel="noopener noreferrer" className="group relative w-full md:w-[50vw]">
-            <div className="h-48 sm:h-56 md:h-64 w-full bg-[url('/koncert.jpg')] bg-cover bg-center rounded-lg shadow-lg transition-all duration-300 group-hover:opacity-50 saturate-0 group-hover:saturate-100 opacity-80 border-2" style={{ borderColor: "#968B72" }}></div>
-            <p className="absolute inset-0 flex items-center justify-center text-white text-lg sm:text-xl md:text-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+          <a id="obrazekjedna" href="https://www.facebook.com/kapelakvarton/events" target="_blank" rel="noopener noreferrer" className="group relative w-full xl:w-[50vw]">
+            <div className="h-[30vh] w-full bg-[url('/koncertt.png')] bg-cover bg-center rounded-lg shadow-lg transition-all duration-300 group-hover:opacity-50 group-hover:saturate-100 saturate-0 opacity-80 border-2" style={{ borderColor: "#968B72" }}></div>
+            <p className="absolute  inset-0 flex items-center justify-center text-white text-lg sm:text-xl xl:text-2xl xl:opacity-0 transition-opacity duration-300 group-hover:opacity-100">
               Podívej se na nadcházející akce!
             </p>
           </a>
         </div>
 
-        <div className="flex flex-col-reverse md:flex-row items-center w-full space-y-6 md:space-y-0 md:justify-between">
-          <a id="obrazekdva" href="https://www.youtube.com/@kapelakvarton" target="_blank" rel="noopener noreferrer" className="group relative w-full md:w-[50vw]">
-            <div className="h-48 sm:h-56 md:h-64 w-full bg-[url('/kytara.jpg')] bg-cover bg-center rounded-lg shadow-lg transition-all duration-300 group-hover:opacity-50 group-hover:saturate-100 saturate-0 opacity-80 border-2" style={{ borderColor: "#968B72" }}></div>
-            <p className="absolute inset-0 flex items-center justify-center text-white text-lg sm:text-xl md:text-2xl opacity-0 transition-transform duration-300 group-hover:opacity-100">
+        <div className="flex flex-col-reverse xl:flex-row items-center w-full space-y-6 xl:space-y-0 xl:justify-between">
+          <a id="obrazekdva" href="https://www.youtube.com/@kapelakvarton" target="_blank" rel="noopener noreferrer" className="group relative w-full xl:w-[50vw]">
+            <div className="h-[30vh] w-full bg-[url('/kytara.jpg')] bg-cover bg-center rounded-lg shadow-lg transition-all duration-300 group-hover:opacity-50 group-hover:saturate-100 saturate-0 opacity-80 border-2" style={{ borderColor: "#968B72" }}></div>
+            <p className="absolute inset-0 flex items-center justify-center text-white text-lg sm:text-xl xl:text-2xl xl:opacity-0 transition-transform duration-300 group-hover:opacity-100">
               Poslechni si nás na YouTube!
             </p>
           </a>
-          <h3 id='nahravky' className="text-white text-2xl sm:text-3xl md:text-4xl text-center md:text-right font-[Montserrat]">
+          <h3 id='nahravky' className="text-white text-2xl sm:text-3xl xl:text-4xl text-center xl:text-right font-[Montserrat]">
             A NEBO NÁS CHCETE <br />
             SLYŠET HNED?
           </h3>
@@ -263,17 +263,17 @@ const Home = () => {
 
 
       {/* O KAPELE */}
-      <div id='kapela' className='px-4 sm:px-8 md:px-[120px] h-screen bg-black snap-start flex flex-col md:flex-row items-center justify-between p-4 sm:p-6 md:p-10'>
-        <div className="w-full md:w-1/2 text-center md:text-left mb-6 md:mb-0">
-          <h1 id="memberName" className='text-white font-[Montserrat] text-2xl sm:text-3xl md:text-4xl mb-5'>{selectedMember.name}</h1>
-          <p id="memberTitle" className='text-white leading-loose md:leading-normal lg:leading-loose text-sm sm:text-base md:text-base mb-3 md:pr-[7vh]'>{selectedMember.title}</p>
+      <div id='kapela' className='px-4 sm:px-8 xl:px-[120px] h-screen bg-black snap-start flex flex-col xl:flex-row items-center justify-between p-4 sm:p-6 xl:p-10'>
+        <div className="w-full xl:w-1/2 text-center xl:text-left mb-6 xl:mb-0">
+          <h1 id="memberName" className='text-white font-[Montserrat] text-2xl sm:text-3xl xl:text-4xl mb-5'>{selectedMember.name}</h1>
+          <p id="memberTitle" className='text-white leading-loose xl:leading-normal lg:leading-loose text-sm sm:text-base xl:text-base mb-3 xl:pr-[7vh]'>{selectedMember.title}</p>
           <Button
             onClick={() => setSelectedMember(clenove[0])}
             className={selectedMember === clenove[0] ? "hidden" : "hidden lg:block"}
             text="O KAPELE"
           />
         </div>
-        <div id="img" className='grid grid-cols-2 gap-6 md:gap-4 lg:gap-7 w-full md:w-1/2 lg:m-20'>
+        <div id="img" className='grid grid-cols-2 gap-6 xl:gap-4 lg:gap-7 w-full xl:w-1/2 lg:m-20'>
           <img onClick={() => setSelectedMember(clenove[1])} className="border-2 rounded-2xl hover:opacity-70 hover:scale-105 cursor-pointer transition-transform duration-200 w-full" style={{ borderColor: "#968B72" }} src="ivcaa.png" alt="" />
           <img onClick={() => setSelectedMember(clenove[2])} className="border-2 rounded-2xl hover:opacity-70 hover:scale-105 cursor-pointer transition-transform duration-200 w-full" style={{ borderColor: "#968B72" }} src="honzaa.png" alt="" />
           <img onClick={() => setSelectedMember(clenove[3])} className="border-2 rounded-2xl hover:opacity-70 hover:scale-105 cursor-pointer transition-transform duration-200 w-full" style={{ borderColor: "#968B72" }} src="martinn.png" alt="" />
@@ -283,34 +283,34 @@ const Home = () => {
 
 
       {/* KONTAKT */}
-      <div id='kontakt' className='flex flex-col sm:mt-[300px] mt-40 md:m-0 md:flex-row justify-center h-screen'>
-        <div id="infokontakt" className=" px-4 sm:px-8 md:px-[120px] snap-start flex flex-col justify-center">
-          <div className='pb-6 md:pb-[30px]'>
-            <h1 className='text-white font-[Montserrat] text-2xl sm:text-3xl md:text-4xl pb-3 md:pb-[15px]'>NAPIŠTE NÁM!</h1>
+      <div id='kontakt' className='flex flex-col sm:mt-[300px] mt-40 xl:m-0 xl:flex-row justify-center h-screen'>
+        <div id="infokontakt" className=" px-4 sm:px-8 xl:px-[120px] snap-start flex flex-col justify-center">
+          <div className='pb-6 xl:pb-[30px]'>
+            <h1 className='text-white font-[Montserrat] text-2xl sm:text-3xl xl:text-4xl pb-3 xl:pb-[15px]'>NAPIŠTE NÁM!</h1>
             <div className='flex'>
-              <p className='text-white text-sm sm:text-base md:text-base'>+420 123 456 789</p>
+              <p className='text-white text-sm sm:text-base xl:text-base'>+420 123 456 789</p>
             </div>
             <div className='flex'>
-              <p className='text-white text-sm sm:text-base md:text-base'>kapelakvarton@gmail.com</p>
+              <p className='text-white text-sm sm:text-base xl:text-base'>kapelakvarton@gmail.com</p>
             </div>
           </div>
           <div>
-            <p className='text-white text-lg sm:text-xl md:text-xl uppercase pt-6 md:pt-[30px] pb-3 md:pb-[15px]'>NEBO NÁS JEN SLEDUJTE</p>
+            <p className='text-white text-lg sm:text-xl xl:text-xl uppercase pt-6 xl:pt-[30px] pb-3 xl:pb-[15px]'>NEBO NÁS JEN SLEDUJTE</p>
             <a href='https://www.instagram.com/kapelakvarton/?hl=cs' className='flex' target="_blank">
               <img className="h-5 w-5 mt-1" src="ig.png" alt="" />
-              <p className='text-white ml-1 pb-1 text-sm sm:text-base md:text-base'>kapelakvarton</p>
+              <p className='text-white ml-1 pb-1 text-sm sm:text-base xl:text-base'>kapelakvarton</p>
             </a>
             <a href='https://www.facebook.com/kapelakvarton' className='flex' target="_blank">
               <img className="h-5 w-5 mt-1" src="fb.png" alt="" />
-              <p className='text-white ml-1 pb-1 text-sm sm:text-base md:text-base'>Kvarton</p>
+              <p className='text-white ml-1 pb-1 text-sm sm:text-base xl:text-base'>Kvarton</p>
             </a>
             <a href='https://www.youtube.com/@kapelakvarton' className='flex' target="_blank">
               <img className="h-5 w-5 mt-1" src="youtube.png" alt="" />
-              <p className='text-white ml-1 pb-1 text-sm sm:text-base md:text-base'>KVARTON</p>
+              <p className='text-white ml-1 pb-1 text-sm sm:text-base xl:text-base'>KVARTON</p>
             </a>
           </div>
         </div>
-        <div id="fotokontakt" className="bg-[url('/skupina.jpg')] bg-cover md:bg-[url('/skupinav.jpg')] lg:bg-[url('/skupina.jpg')] md:bg-center xl:bg-right bg-right h-[60vh] sm:h-[50vh] md:h-[80vh] w-full md:w-[100vh] mt-6 md:mt-[5vh] mb-[5vh] mr-0 md:mr-[10vh] rounded-2xl saturate-0 border-2 hover:saturate-70 transition-transform duration-200" style={{ borderColor: "#968B72" }}></div>
+        <div id="fotokontakt" className="bg-[url('/skupina.jpg')] bg-cover xl:bg-[url('/skupinav.jpg')] 2xl:bg-[url('/skupina.jpg')] lg:bg-center xl:bg-right bg-right h-[60vh] sm:h-[50vh] xl:h-[80vh] w-full xl:w-[100vh] mt-6 md:mt-[5vh] mb-[5vh] mr-0 md:mr-[10vh] rounded-2xl saturate-0 border-2 hover:saturate-70 transition-transform duration-200" style={{ borderColor: "#968B72" }}></div>
       </div>
     </main>
   )
