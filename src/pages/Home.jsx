@@ -26,11 +26,11 @@ const Home = () => {
       "#hlavni",
       {
         // Starting scale
-        letterSpacing: "0px",  // Starting letter-spacing
+        scale: 1,  // Starting letter-spacing
       },
       {
         // Scale up the text
-        letterSpacing: "100px", // Gradually increase letter-spacing
+        scale: 2, // Gradually increase letter-spacing
         scrollTrigger: {
           trigger: "#hlavni",
           start: "top+=80vh",
@@ -220,11 +220,14 @@ const Home = () => {
     <main className="scroll-smooth overflow-y-scroll snap-y snap-mandatory bg-black min-h-screen">
       <section id="home" className="snap-start h-screen relative">
         <Navbar />
-        <div className="absolute inset-0 bg-[url('./introfoto.png')] bg-cover bg-center blur-md z-0"></div>
-        <div className="h-[92vh] bg-[url('./introfoto.png')] bg-contain xl:bg-cover bg-center flex flex-col justify-center items-center relative z-10 bg-no-repeat">
+        <div className="absolute inset-0 bg-[url('/introfoto.png')] bg-cover bg-center blur-md z-0"></div>
+        <div className="h-[92vh] bg-[url('/introfoto.jpg')] bg-contain xl:bg-cover bg-center flex flex-col justify-center items-center relative z-10 bg-no-repeat">
+          {/*  
           <h1 id="hlavni" className="text-center text-white text-5xl sm:text-7xl md:text-9xl pt-[15vh] font-[Montserrat] font-light">
             KVARTON
           </h1>
+          */}
+          <img id="hlavni" className='w-[50vw]' src="logo.svg" alt="logo" />
           <p id="podnadpis" className="text-center text-white text-lg sm:text-xl md:text-2xl">pop-folk/jazz</p>
         </div>
       </section>
@@ -235,7 +238,7 @@ const Home = () => {
             KDE NÁS USLYŠÍTE
           </h2>
           <a id="obrazekjedna" href="https://www.facebook.com/kapelakvarton/events" target="_blank" rel="noopener noreferrer" className="group relative w-full md:w-[50vw]">
-            <div className="h-48 sm:h-56 md:h-64 w-full bg-[url('koncert.png')] bg-cover bg-center rounded-lg shadow-lg transition-all duration-300 group-hover:opacity-50 saturate-0 opacity-80 border-2" style={{ borderColor: "#968B72" }}></div>
+            <div className="h-48 sm:h-56 md:h-64 w-full bg-[url('/koncert.jpg')] bg-cover bg-center rounded-lg shadow-lg transition-all duration-300 group-hover:opacity-50 saturate-0 group-hover:saturate-100 opacity-80 border-2" style={{ borderColor: "#968B72" }}></div>
             <p className="absolute inset-0 flex items-center justify-center text-white text-lg sm:text-xl md:text-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100">
               Podívej se na nadcházející akce!
             </p>
@@ -244,7 +247,7 @@ const Home = () => {
 
         <div className="flex flex-col-reverse md:flex-row items-center w-full space-y-6 md:space-y-0 md:justify-between">
           <a id="obrazekdva" href="https://www.youtube.com/@kapelakvarton" target="_blank" rel="noopener noreferrer" className="group relative w-full md:w-[50vw]">
-            <div className="h-48 sm:h-56 md:h-64 w-full bg-[url('kytara.png')] bg-cover bg-center rounded-lg shadow-lg transition-all duration-300 group-hover:opacity-50 saturate-0 opacity-80 border-2" style={{ borderColor: "#968B72" }}></div>
+            <div className="h-48 sm:h-56 md:h-64 w-full bg-[url('/kytara.jpg')] bg-cover bg-center rounded-lg shadow-lg transition-all duration-300 group-hover:opacity-50 group-hover:saturate-100 saturate-0 opacity-80 border-2" style={{ borderColor: "#968B72" }}></div>
             <p className="absolute inset-0 flex items-center justify-center text-white text-lg sm:text-xl md:text-2xl opacity-0 transition-transform duration-300 group-hover:opacity-100">
               Poslechni si nás na YouTube!
             </p>
@@ -271,10 +274,10 @@ const Home = () => {
           />
         </div>
         <div id="img" className='grid grid-cols-2 gap-6 md:gap-4 lg:gap-7 w-full md:w-1/2 lg:m-20'>
-          <img onClick={() => setSelectedMember(clenove[1])} className="border-2 rounded-2xl hover:opacity-70 hover:scale-105 cursor-pointer transition-transform duration-200 w-full" style={{ borderColor: "#968B72" }} src="ivca.png" alt="" />
-          <img onClick={() => setSelectedMember(clenove[2])} className="border-2 rounded-2xl hover:opacity-70 hover:scale-105 cursor-pointer transition-transform duration-200 w-full" style={{ borderColor: "#968B72" }} src="honza.png" alt="" />
-          <img onClick={() => setSelectedMember(clenove[3])} className="border-2 rounded-2xl hover:opacity-70 hover:scale-105 cursor-pointer transition-transform duration-200 w-full" style={{ borderColor: "#968B72" }} src="martin.png" alt="" />
-          <img onClick={() => setSelectedMember(clenove[4])} className="border-2 rounded-2xl hover:opacity-70 hover:scale-105 cursor-pointer transition-transform duration-200 w-full" style={{ borderColor: "#968B72" }} src="lubos.png" alt="" />
+          <img onClick={() => setSelectedMember(clenove[1])} className="border-2 rounded-2xl hover:opacity-70 hover:scale-105 cursor-pointer transition-transform duration-200 w-full" style={{ borderColor: "#968B72" }} src="ivcaa.png" alt="" />
+          <img onClick={() => setSelectedMember(clenove[2])} className="border-2 rounded-2xl hover:opacity-70 hover:scale-105 cursor-pointer transition-transform duration-200 w-full" style={{ borderColor: "#968B72" }} src="honzaa.png" alt="" />
+          <img onClick={() => setSelectedMember(clenove[3])} className="border-2 rounded-2xl hover:opacity-70 hover:scale-105 cursor-pointer transition-transform duration-200 w-full" style={{ borderColor: "#968B72" }} src="martinn.png" alt="" />
+          <img onClick={() => setSelectedMember(clenove[4])} className="border-2 rounded-2xl hover:opacity-70 hover:scale-105 cursor-pointer transition-transform duration-200 w-full" style={{ borderColor: "#968B72" }} src="luboss.png" alt="" />
         </div>
       </div>
 
@@ -307,7 +310,7 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div id="fotokontakt" className="bg-[url('./skupina.png')] bg-cover md:bg-[url('./skupinav.png')] lg:bg-[url('./skupina.png')] md:bg-center xl:bg-right bg-right h-[60vh] sm:h-[50vh] md:h-[80vh] w-full md:w-[100vh] mt-6 md:mt-[5vh] mb-[5vh] mr-0 md:mr-[10vh] rounded-2xl saturate-0 border-2 hover:saturate-70 transition-transform duration-200" style={{ borderColor: "#968B72" }}></div>
+        <div id="fotokontakt" className="bg-[url('/skupina.jpg')] bg-cover md:bg-[url('/skupinav.jpg')] lg:bg-[url('/skupina.jpg')] md:bg-center xl:bg-right bg-right h-[60vh] sm:h-[50vh] md:h-[80vh] w-full md:w-[100vh] mt-6 md:mt-[5vh] mb-[5vh] mr-0 md:mr-[10vh] rounded-2xl saturate-0 border-2 hover:saturate-70 transition-transform duration-200" style={{ borderColor: "#968B72" }}></div>
       </div>
     </main>
   )
