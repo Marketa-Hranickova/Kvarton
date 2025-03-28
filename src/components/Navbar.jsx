@@ -59,7 +59,11 @@ export default function Navbar({ className }) { // Renamed to Navbar and added c
             >
               <span className="absolute -inset-1.5" />
               <span className="sr-only">View notifications</span>
-              <p className="mx-1 text-[13px]">stageplot</p>
+              <div className='flex flex-row justify-around items-center'>
+
+                <p className="mx-1 text-[13px]">Stageplan</p>
+                <img className='h-[13px] opacity-70 m-1 ' src="./download.png" alt="" />
+              </div>
             </button>
           </div>
         </div>

@@ -286,16 +286,16 @@ const Home = () => {
       <div id='kontakt' className='flex flex-col sm:mt-[300px] mt-40 xl:m-0 xl:flex-row justify-center h-screen'>
         <div id="infokontakt" className=" px-4 sm:px-8 xl:px-[120px] snap-start flex flex-col justify-center">
           <div className='pb-6 xl:pb-[30px]'>
-            <h1 className='text-white font-[Montserrat] text-2xl sm:text-3xl xl:text-4xl pb-3 xl:pb-[15px]'>NAPIŠTE NÁM!</h1>
+            <h1 className='text-white font-[Montserrat] text-2xl sm:text-3xl xl:text-4xl pb-3 xl:pb-[15px]'>KONTAKT</h1>
             <div className='flex'>
-              <p className='text-white text-sm sm:text-base xl:text-base'>+420 123 456 789</p>
+              <p className='text-white text-sm sm:text-base xl:text-base'>+420 605 194 479</p>
             </div>
             <div className='flex'>
               <p className='text-white text-sm sm:text-base xl:text-base'>kapelakvarton@gmail.com</p>
             </div>
           </div>
           <div>
-            <p className='text-white text-lg sm:text-xl xl:text-xl uppercase pt-6 xl:pt-[30px] pb-3 xl:pb-[15px]'>NEBO NÁS JEN SLEDUJTE</p>
+            <p className='text-white text-lg sm:text-xl xl:text-xl uppercase pt-6 xl:pt-[30px] pb-3 xl:pb-[15px]'>SLEDUJTE NÁS!</p>
             <a href='https://www.instagram.com/kapelakvarton/?hl=cs' className='flex' target="_blank">
               <img className="h-5 w-5 mt-1" src="ig.png" alt="" />
               <p className='text-white ml-1 pb-1 text-sm sm:text-base xl:text-base'>kapelakvarton</p>
